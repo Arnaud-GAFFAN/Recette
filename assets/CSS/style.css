@@ -1,0 +1,224 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@800&family=Jost:wght@300&family=Merriweather:wght@300&family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Arimo:wght@500&family=Inter:wght@800&family=Jost:wght@300&family=Merriweather:wght@300&family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: auto;
+  max-width: calc(100% - 200px);
+  background: rgb(139, 160, 187);
+  min-width: 900px;
+}
+body .main {
+  background: white;
+  margin: 50px 0;
+  padding: 30px;
+}
+
+header {
+  position: relative;
+}
+header > p:first-child {
+  font-size: 1.4rem;
+  font-family: "Allura", cursive;
+  font-family: "Arimo", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Merriweather", serif;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background: rgb(0, 0, 0);
+  display: inline-block;
+  position: absolute;
+  padding: 5px 9px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+header div {
+  text-align: center;
+  margin-top: -25px;
+  -webkit-transform: translateY(15%);
+          transform: translateY(15%);
+}
+header div h1 {
+  font-weight: 900;
+  position: relative;
+  font-family: "Allura", cursive;
+  font-family: "Inter", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Merriweather", serif;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px;
+}
+header div h1::after {
+  content: " ";
+  width: 150px;
+  position: absolute;
+  height: 1px;
+  background: rgb(0, 0, 0);
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 4px;
+}
+header div blockquote p {
+  font-family: "Allura", cursive;
+  font-family: "Arimo", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Merriweather", serif;
+  font-family: "Poppins", sans-serif;
+  width: 40%;
+  margin: auto;
+}
+header div blockquote p::before {
+  content: "❝";
+}
+header div blockquote p::after {
+  content: "❞";
+}
+
+main {
+  background: url("../../assets/img/WhatsApp Image 2023-08-13 à 08.59.49.jpg") center/cover;
+  height: 60vh;
+  margin-top: 20px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 40px;
+}
+main .caracteristiques {
+  height: 100px;
+  background: rgba(139, 160, 187, 0.815);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main .caracteristiques div {
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main .caracteristiques div h2 {
+  margin-bottom: 10px;
+  font-family: "Allura", cursive;
+  font-family: "Arimo", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Merriweather", serif;
+  font-family: "Poppins", sans-serif;
+}
+main .caracteristiques div p {
+  font-family: "Allura", cursive;
+  font-family: "Arimo", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Merriweather", serif;
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px;
+  gap: 100px;
+}
+footer div {
+  height: 45vh;
+}
+footer div h2 {
+  text-transform: uppercase;
+  font-family: "Allura", cursive;
+  font-family: "Arimo", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Merriweather", serif;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  height: 50px;
+}
+footer div h2::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: rgb(139, 160, 187);
+  bottom: 0;
+  left: 0;
+  margin-top: 10px;
+}
+footer div p {
+  font-size: 1.4rem;
+  text-align: center;
+  border: 1px solid rgb(139, 160, 187);
+  margin: 9px 0;
+  padding: 15px;
+}
+footer div ol {
+  font-size: 1.4rem;
+}
+footer div ol li {
+  list-style: none;
+  counter-increment: custom-counter;
+  padding: 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer div ol li::before {
+  content: counter(custom-counter) " ";
+  background: rgb(139, 160, 187);
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 150%;
+  margin-right: 4px;
+}/*# sourceMappingURL=style.css.map */

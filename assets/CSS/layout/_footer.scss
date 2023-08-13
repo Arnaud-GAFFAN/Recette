@@ -1,0 +1,57 @@
+footer {
+  @include grid(repeat(2, 1fr));
+  margin-top: 020px;
+  gap: 100px;
+  div {
+    height: 45vh;
+    h2 {
+      text-transform: uppercase;
+      @include font2;
+      text-align: center;
+      position: relative;
+      margin-bottom: 20px;
+      height: 50px;
+      &::after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        width: 100%;
+        background: $color1;
+        bottom: 0;
+        left: 0;
+        margin-top: 10px;
+      }
+    }
+    p {
+      font-size: 1.4rem;
+      text-align: center;
+      border: 1px solid $color1;
+      margin: 9px 0;
+      padding: 15px;
+    }
+    ol {
+      font-size: 1.4rem;
+      li {
+        list-style: none;
+        counter-increment: custom-counter;
+        padding: 10px;
+        position: relative;
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        &::before {
+          content: counter(custom-counter) " ";
+          background: $color1;
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 150%;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}

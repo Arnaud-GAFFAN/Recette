@@ -1,0 +1,33 @@
+main{
+    background: url("../../assets/img/WhatsApp Image 2023-08-13 à 08.59.49.jpg")center/cover;
+    height: 60vh;
+    margin-top: 20px;
+    color: $color3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 40px;
+    .caracteristiques{
+        height: 100px;
+        background: $color2;
+        display: flex;
+        justify-content: space-between;
+        div{
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h2{
+                margin-bottom: 10px;
+                @include font2;
+
+            }
+            p{
+                @include font2;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@800&family=Jost:wght@300&family=Merriweather:wght@300&family=Poppins:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Arimo:wght@500&family=Inter:wght@800&family=Jost:wght@300&family=Merriweather:wght@300&family=Poppins:wght@500&display=swap");
+
+$color4: rgb(0,0,0);
+$color3: white;
+$color2: rgba(139, 160, 187, 0.815);
+$color1: rgb(139, 160, 187);
+
+@mixin font1 {
+  font-family: "Allura", cursive;
+  font-family: "Inter", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Merriweather", serif;
+  font-family: "Poppins", sans-serif;
+}
+
+@mixin font2 {
+  font-family: "Allura", cursive;
+  font-family: "Arimo", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Jost", sans-serif;
+  font-family: "Merriweather", serif;
+  font-family: "Poppins", sans-serif;
+}
+
+@mixin grid($fraction) {
+  display: grid;
+  grid-template-columns: $fraction;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  margin: auto;
+  max-width: calc(100% - 200px);
+  background: $color1;
+  min-width: 900px;
+  .main{
+    background: $color3;
+    margin: 50px 0;
+    padding: 30px;
+  }
+}
